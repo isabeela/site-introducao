@@ -7,17 +7,17 @@ import { HelloComponent } from './hello.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 
-import { RouterModule } from '@angular/router';
+//import { RouterModule } from '@angular/router';
 
 @NgModule({
   imports: [
     BrowserModule,
-    FormsModule,
-    RouterModule.forRoot(
+    FormsModule
+    /* RouterModule.forRoot(
       [
         {path: '', component: HomeComponent}
       ]
-    )
+    ) */
   ],
   declarations: [AppComponent, HelloComponent, NavbarComponent, HomeComponent],
   bootstrap: [AppComponent]
