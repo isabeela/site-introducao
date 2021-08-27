@@ -7,6 +7,7 @@ import { HelloComponent } from './hello.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { SobreComponent } from './sobre/sobre.component';
+import { NumComponent } from './num/num.component';
 
 import { RouterModule } from '@angular/router';
 
@@ -19,7 +20,13 @@ import { RouterModule } from '@angular/router';
       { path: 'sobre', component: SobreComponent }
     ])
   ],
-  declarations: [AppComponent, HelloComponent, NavbarComponent, SobreComponent],
+  declarations: [
+    AppComponent,
+    HelloComponent,
+    NavbarComponent,
+    SobreComponent,
+    NumComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
