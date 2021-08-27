@@ -17,7 +17,8 @@ import { RouterModule } from '@angular/router';
     FormsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
-      { path: 'sobre', component: SobreComponent }
+      { path: 'sobre', component: SobreComponent },
+      { path: 'num', component: NumComponent }
     ])
   ],
   declarations: [
