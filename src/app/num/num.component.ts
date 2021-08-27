@@ -6,9 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./num.component.css']
 })
 export class NumComponent implements OnInit {
-  aleatorio = Math.floor(Math.random() * 101);
-  aleatorio1 = Math.floor(Math.random() * 101);
-
   constructor() {}
 
   ngOnInit() {}
@@ -16,7 +13,7 @@ export class NumComponent implements OnInit {
   getAleatorio() {
     let list: number[] = [];
     for (let i = 1; i <= 5; i++) {
-      list.push(this.aleatorio, this.aleatorio1);
+      list[i] = Math.floor(Math.random() * 101);
     }
     return list;
   }
